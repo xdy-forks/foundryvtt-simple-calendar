@@ -3,6 +3,7 @@ import Macros from "./classes/macros";
 import API from "./classes/api";
 import {Logger} from "./classes/logging";
 import {SimpleCalendarHooks} from "./constants";
+import SCNoteCollection from "./classes/sc-note-collection";
 SimpleCalendar.instance = new SimpleCalendar();
 Hooks.on('init', () => {
     //Initialize the Simple Calendar
@@ -19,6 +20,7 @@ Hooks.on('init', () => {
 Hooks.on('ready', () => {
     //Initialize the Simple Calendar Sockets
     SimpleCalendar.instance.initializeSockets();
+    SCNoteCollection.onReady();
     SimpleCalendar.instance.checkNoteReminders();
 });
 Hooks.on('getSceneControlButtons', SimpleCalendar.instance.getSceneControlButtons.bind(SimpleCalendar.instance));
