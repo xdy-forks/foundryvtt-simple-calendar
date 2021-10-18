@@ -8,6 +8,10 @@ export const ModuleName = 'foundryvtt-simple-calendar';
  */
 export const ModuleSocketName = `module.${ModuleName}`;
 
+export namespace SCNotes{
+    export const DirectoryName = `_simple_calendar_notes_directory`;
+}
+
 /**
  * The name of the settings that are saved in the world settings database
  */

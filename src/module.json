@@ -13,7 +13,7 @@
       "ko-fi": "vigorator"
     }
   ],
-  "minimumCoreVersion": "0.7.9",
+  "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "0.8.9",
   "url": "https://github.com/vigoren/foundryvtt-simple-calendar",
   "bugs": "https://github.com/vigoren/foundryvtt-simple-calendar/issues",

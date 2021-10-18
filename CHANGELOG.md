@@ -1,5 +1,26 @@
 # Change Log
 
+## v1.4.0-Beta1 - Notes as Journal Entries
+
+This update converts all Simple Calendar notes to be individual journal entries. In previous versions the Calendar notes were stored in the worlds settings as this was an easier place to save them back in Foundry version 0.7.9. However, Simple Calendar notes are basically journal entries with some extra data (dates, times, categories etc...) and with the changes to how Foundry does the new document model it is easier to create Journal Entries that can open up in a specific module's interface. These changes allow me to impliment this change in a much easier way.
+
+This beta release is to allow users who want to test out these changes and let me know of any major issues with this change before it is release to all users.
+
+**Important**
+
+As this is a beta release it is strong encouraged to back up any worlds before trying out the beta. Just in case something goes wrong, no data will be lost.
+
+### Supported Foundry Versions
+
+This update drops support for Foundry versions 0.7.x. Unfortunately this requires the [Document changes](https://foundryvtt.com/releases/8.88) that were made in Foundry version 0.8.0 so previous versions will no longer be supported.
+
+### Changes
+
+
+### Known Incompatibilities
+
+- If [Monk's Enhanced Journal](https://github.com/ironmonk88/monks-enhanced-journal) module is installed, clicking on a Simple Calendar note from the [Journal Entries sidebar](https://foundryvtt.com/article/journal/) will cause it to open in that modules interface. This is because Monk's Enhanced Journal captures all clicks in the journal tab and forces them to open in its interface. Working on a fix for this. 
+
 ## v1.3.75 - Bug Fixes
 
   - Fixed a rare issue where date formats would throw an exception and cause the calendar and the configuration to not open.
